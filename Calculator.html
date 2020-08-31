@@ -156,10 +156,11 @@
 </style>
 	<script>
 	
-		$("opp").onclick(function(opposite){
-   		var b=document.getElementById("display").value;
-   		var n= b * -1; 
-   		document.getElementById("display").value = n; // assign the value of n back to the output
+		$("#opp").click(function(opposite){
+   		var b=document.getElementById("display");
+  		var n=b.value; 
+   		n = n * -1;
+   		b.value = n;
 		});
 		
 	</script>
