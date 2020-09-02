@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link href="//db.onlinewebfonts.com/c/0209bfe594ed24b75ee2aac06529e4f9?family=NHaasGroteskDSPro-75Bd" rel="stylesheet" type="text/css"/>
-<title>DES350_Calculator</title>
+<title>Untitled Document</title>
 <style>
 		
 	#myCalculator{
@@ -131,7 +131,7 @@
 		border: 0;
 		word-break: break-all;
 		outline: 0;
-		font-size: 40px;
+		font-size: 60px;
 		border-radius: 0px;
 		font-color: #000000;
 		font-weight: lighter;
@@ -156,11 +156,10 @@
 </style>
 	<script>
 	
-		$("#opp").click(function(opposite){
-   		var b=document.getElementById("display");
-  		var n=b.value; 
-   		n = n * -1;
-   		b.value = n;
+		$("opp").onclick(function(opposite){
+   		var b=document.getElementById("display").value;
+   		var n= b * -1; 
+   		document.getElementById("display").value = n; // assign the value of n back to the output
 		});
 		
 	</script>
