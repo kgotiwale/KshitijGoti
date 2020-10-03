@@ -154,7 +154,7 @@
 		width: 85px;
 		height: 70px;
 		padding-left: 0px;
-		margin: 1px;
+		margin-top:-3px;
 		
 	}
 	
@@ -169,7 +169,7 @@
 		width: 85px;
 		height: 70px;
 		padding-left: 0px;
-		margin: 1px;
+		margin-top:-3px;
 		
 	}
 	
@@ -327,14 +327,17 @@
 	
 </style>
 	
-<script>
-	
-	
+<script type="text/javascript">
+		
 		function Alert(){
 			alert("Sorry no negative values, positive vibes only!");
 		}
 	
-		
+		function percentage(){
+			a = getElementbyID.display();
+			b = a/100;
+			result = b.display();
+		}
 		
 </script>
 	
@@ -355,7 +358,7 @@
 			<div class="inputRow">
 				<input type="button" class="operatorA" value="AC" onClick="calculator.display.value =''">
 				<input type="button" name ="opp" id="opp" class="numberP" value="+/-" onClick="Alert()">
-				<input type="button" class="operatorC" value="%" onClick="calculator.display.value +='%'">
+				<input type="button" class="operatorC" value="%" onClick="percentage()">
 				<input type="button" class="operatorD" name="multiply" value="&#247;" onClick="calculator.display.value +='/'">
 			</div>
 			
@@ -370,7 +373,7 @@
 				<input type="button" class="number" value="4" onClick="calculator.display.value +='4'">
 				<input type="button" class="number" value="5" onClick="calculator.display.value +='5'">
 				<input type="button" class="number" value="6" onClick="calculator.display.value +='6'">
-				<input type="button" class="operator" name="subtract" value="-" onClick="calculator.display.value +='-'">
+				<input type="button" class="operator" name="subtract" value="&#8722;" onClick="calculator.display.value +='-'">
 			</div>
 			
 			<div class="inputRow">
@@ -383,7 +386,7 @@
 			<div class="inputRow">
 			<input type="button" class="number" value="0" onClick="calculator.display.value +='0'">
 			<input type="button" class="numberF" name="add" value="." onClick="calculator.display.value +='.'">
-			<input type="button" class="numberF" name="add" value="," onClick="calculator.display.value +=','">
+			<input type="button" class="numberF" name="add" value="" onClick="calculator.display.value +=''">
 			<input type="button" class="operatorE" name="equals" value="=" onClick="calculator.display.value=eval(calculator.display.value)">
 			</div>
 			</div>
