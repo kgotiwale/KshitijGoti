@@ -12,7 +12,7 @@
     	url("http://db.onlinewebfonts.com/t/988d4c9843303bc94792a4ad537f1cfb.woff") format("woff"), /* chrome firefox */
     	url("http://db.onlinewebfonts.com/t/988d4c9843303bc94792a4ad537f1cfb.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
     	url("http://db.onlinewebfonts.com/t/988d4c9843303bc94792a4ad537f1cfb.svg#Druk Bold") format("svg"); /* iOS 4.1- */
-}
+		}
 		
 		h1{
 			font-family: "Druk Bold";
@@ -47,6 +47,85 @@
 			padding-top: -100px;
 			line-height: 0.5;
 		}
+		
+		
+		.germanButton{
+			height: 70px;
+			width: 70px;
+			font-family: 'Helvetica Neue';
+			font-weight: 600;
+			font-size: 25pt;
+			align-content: center;
+			border: 0px;
+			background-color: rgba(252,170,70,1.00);
+			z-index: 0;
+			border-radius: 70px;
+  			position: fixed;
+  			top: 5px;
+			right: 5px;
+			margin-left: 95%;
+			margin-bottom: 0.5%;
+			
+		}
+		
+		.englishButton{
+			height: 70px;
+			width: 70px;
+			font-family: 'Helvetica Neue';
+			font-weight: 600;
+			font-size: 25pt;
+			align-content: center;
+			border: 0px;
+			background-color: rgba(251,0,7,1.00);
+			z-index: 0;
+			border-radius: 70px;
+  			position: fixed;
+  			top: 80px;
+			right: 5px;
+			margin-left: 95%;
+		}
+		
+		.main{
+			display: flex;
+			
+		}
+		
+		.column1{
+			width: 25%;
+			float: left;
+			margin-right: 3px;
+		}
+		
+		.introduction{
+			font-family: 'Helvetica Neue';
+			font-style: italic;
+			font-weight: 300;
+			margin-top: 60px;
+		}
+		
+		p span{
+			color: rgba(48,48,48,1.00);
+		}
+		
+		.column2{
+			width: 25%;
+			float: left;
+			margin-right: 3px;
+		}
+		
+		.column3{
+			width: 25%;
+			float: left;
+			margin-right: 3px;
+		}
+		
+		.column4{
+			width: 25%;
+			float: left;
+			margin-right: 3px;
+		}
+		
+		
 	
 	</style>
 	
@@ -56,6 +135,75 @@
 <body>
 	<h1>Dieter</h1>
 	<h2>Rams<br><span class="number">10</span><br><span class="text">principles<br>of design</span></h2>
-	<div type="button" class="language" value="de" onClick="toggleLanguage('German')"></div> 
+	<input type="button" class="germanButton" onClick="myFunction()" value="de">
+	<br>
+	<input type="button" class="englishButton" onClick="myFunction()" value="en">
+	
+	<div class="main">
+		<div class="column1">
+			
+		<p class="introduction">“My heart belongs to the details. I actually always found them to be more important than the big picture. Nothing works without details. They are everything, the baseline of quality."<br>
+		<span>Dieter Rams, born 1932 in Wiesbaden, Germany.</span></p>
+			
+		<h3>1</h3>
+		
+		</div>
+		<div class="column2">
+			
+			<p class="introduction">The why?</p>
+		
+		<p></p>
+		
+		</div>
+		<div class="column3">
+		
+			<p class="introduction">Kshitij Gotiwale</p>
+		
+		</div>
+		<div class="column4">
+		
+		
+		</div>
+	
+	
+	
+	
+	</div>
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+		function myFunction() {
+  		var x = document.getElementById("myDIV");
+  		if (x.style.display === "none") {
+    			x.style.display = "block";
+  			} else {
+    			x.style.display = "none";
+  			}
+		}
+	</script>
 </body>
 </html>
