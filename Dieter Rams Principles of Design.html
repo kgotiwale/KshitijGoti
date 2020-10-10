@@ -97,7 +97,11 @@
 		}
 		
 		.main{
-			display: flex;
+			display: flex;	
+		}
+		
+		.main2{
+			display: none;
 			
 		}
 		
@@ -126,11 +130,46 @@
 			margin-left: 50px; 
 		}
 		
+		.para1ge{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -345px;
+			margin-left: 50px; 
+		}
+		
+		.para5{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -350px;
+			margin-left: 80px; 
+		}
+		
+		.para5ge{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -360px;
+			margin-left: 80px; 
+		}
+		
+		.para9{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -360px;
+			margin-left: 80px; 
+		}
+		
+		.para9ge{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -350px;
+			margin-left: 80px; 
+		}
+		
 		b{
 			font-family: 'Druk Bold';
 			font-size: 40px;
 			line-height: 35px;
-			z-index: 4;
+			margin-top: 20px;
 		}
 		
 		.column2{
@@ -143,7 +182,42 @@
 			font-family: 'Helvetica Neue';
 			font-weight: 300;
 			margin-top: -395px;
+			margin-left: 80px;
+		}
+		
+		.para2ge{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -430px;
+			margin-left: 80px;
+		}
+		
+		.para6{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -390px;
 			margin-left: 80px; 
+		}
+		
+		.para6ge{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -420px;
+			margin-left: 80px; 
+		}
+		
+		.para10{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -390px;
+			margin-left: 130px; 
+		}
+		
+		.para10ge{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -400px;
+			margin-left: 130px; 
 		}
 		
 		.column3{
@@ -153,6 +227,13 @@
 		}
 		
 		.para3{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -345px;
+			margin-left: 80px; 
+		}
+		
+		.para7{
 			font-family: 'Helvetica Neue';
 			font-weight: 300;
 			margin-top: -345px;
@@ -170,10 +251,23 @@
 			font-weight: 300;
 			margin-top: -410px;
 			margin-left: 80px; 
+			
 		}
 		
+		.para8{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -420px;
+			margin-left: 80px; 
+		}
 		
-	
+		.para8ge{
+			font-family: 'Helvetica Neue';
+			font-weight: 300;
+			margin-top: -440px;
+			margin-left: 80px; 
+		}
+		
 	</style>
 	
 	
@@ -184,49 +278,159 @@
 	<h2>Rams<br><span class="number">10</span><br><span class="text">principles<br>of design</span></h2>
 	<input type="button" class="germanButton" onClick="myFunction()" value="de">
 	<br>
-	<input type="button" class="englishButton" onClick="myFunction()" value="en">
+	<input type="button" class="englishButton" onClick="" value="en">
 	
-	<div class="main">
+	<div class="main" id="english">
 		<div class="column1">
 			
-		<p class="introduction">“My heart belongs to the details. I actually always found them to be more important than the big picture. Nothing works without details. They are everything, the baseline of quality."<br>
-		<span>Dieter Rams, born 1932 in Wiesbaden, Germany.</span></p>
+			<p class="introduction">“My heart belongs to the details. I actually always found them to be more important than the big picture. Nothing works without details. They are everything, the baseline of quality."<br>
+			<span>Dieter Rams, born 1932 in Wiesbaden, Germany.</span></p>
 			
 		<h3>1</h3>
 		<p class="para1">
 		<b>Good design is innovative.</b><br>
 		I feel like innovation can never end. There's always a little push that can happen to an already existing system which would take it to the next level. Without innovation, there's no progress.</p>
+			
+		<h3>5</h3>
+		<p class="para5">
+		<b>Good design is unobtrusive.</b><br>
+		I feel like good design should fit-in along with the user's expression. One should not have to revolve around the product, but the other way round. The product should be an extension of the user and helps them be productive.</p>
+			
+		<h3>9</h3>
+		<p class="para9">
+		<b>Good design is environmental-friendly.</b><br>
+		Oh yes, it is! If we make something long-lasting and follow the previous principles I believe we can contribute to less waste and more productivity.</p>
 		
 		</div>
 		<div class="column2">
 			
-			<p class="introduction">The why?<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et egestas quis ipsum</p>
+			<p class="introduction"><br><br><br><br></p>
 			
 		<h3>2</h3>
 		<p class="para2">
 		<b>Good design makes a product useful.</b><br>
 		A products' usefulness extends beyond its functional use. It also has to feel like something you couldn't stop thinking about. Because sometimes, even a toaster is enough to lift your mood if it functions correctly and does more than expected.</p>
+			
+		<h3>6</h3>
+		<p class="para6">
+		<b>Good design is honest.</b><br>
+		I feel like we often forget how good honest design can be. I well designed and suited white chair and desk is the perfect example. If it were to have flaws but look great it wouldn't have served its purpose and only have been obstructive to the productivity of the user. An honest and truthfully designed thing can put a smile to the users face.</p>
 		
-		<p></p>
+		<h3>10</h3>
+		<p class="para10ge">
+		<b>Good design is as little design as possible.</b><br>
+		We think about design which is thorough to the last detail and is as little as possible. Design is always intentional, anything that doesn't serve a purpose should be eliminated. The design follows function, delete if it doesn't!</p>
 		
 		</div>
 		<div class="column3">
 		
-			<p class="introduction">Kshitij Gotiwale<br>Digital Media Design IV<br><br><br></p>
+			<p class="introduction">This project was a deeper dive into understanding the principles of Dieter Rams and learning about them in a very hands-on and pratical manner. Asking ourself "is our design good desing?"<br><br></p>
 			
 		<h3>3</h3>
 		<p class="para3">
 		<b>Good design is aesthetic.</b><br>
 		A product also has to be aesthetically pleasing. Because this is probably something which will affect the life of a consumer daily. Something which would take place in a room and, it should be something to look at!</p>
+			
+		<h3>7</h3>
+		<p class="para7">
+		<b>Good design is long-lasting.</b><br>
+		Good design never goes with the current trend or tries to keep up with the era. Hence, it transcends the course of time. Good design never goes out of fashion, because it never tries to be in.</p>
 		
 		</div>
 		<div class="column4">
-			<p class="introduction">My explorations<br><br><br><br></p>
+			
+			<p class="introduction"><span>Kshitij Gotiwale<br>Digital Media Design IV<br><br><br></span></p>
 			
 		<h3>4</h3>
 		<p class="para4">
 		<b>Good design makes a product understandable.</b><br>
 		I believe that this is so true. Good design makes the product understandable. I feel like if my grandpa can use something, it's good design. I don't want to read a 30-page long manual, I need the design to be good enough so that when I pick the product up, I understand everything there is to it.</p>
+			
+		<h3>8</h3>
+		<p class="para8">
+		<b>Good design is thorough, down to the last detail.</b><br>
+		Carefully looking out for every line, type and form are what good design is about. The human eye can notice the slightest change in alignment when it's not done right. Good design is thought-out to the very last detail, if it was me, right up to the point of how it's shadow looks throughout the day.</p>
+		</div>
+	</div>
+		
+		<div class="main2" id="german">
+		<div class="column1">
+			
+			<p class="introduction">“Mein Herz gehört zu den Details. Ich fand sie eigentlich immer wichtiger als das große Ganze. Ohne Details funktioniert nichts. Sie sind alles, die Basis der Qualität."<br>
+			<span>Dieter Rams, born 1932 in Wiesbaden, Germany.</span></p>
+			
+		<h3>1</h3>
+		<p class="para1ge">
+		<b>Gutes Design ist innovativ.</b><br>
+		Ich habe das Gefühl, dass Innovation niemals enden kann. Es gibt immer einen kleinen Schub, der einem bereits vorhandenen System passieren kann, um es auf die nächste Ebene zu bringen. Ohne Innovation gibt es keinen Fortschritt.</p>
+			
+		<h3>5</h3>
+		<p class="para5ge">
+		<b>Gutes Design ist unauffallig.</b><br>
+		Ich bin der Meinung, dass gutes Design zusammen mit dem Ausdruck des Benutzers passen sollte. Man sollte sich nicht um das Produkt drehen müssen, sondern umgekehrt. Das Produkt sollte eine Erweiterung des Benutzers sein und ihm helfen, produktiv zu sein.</p>
+			
+		<h3>9</h3>
+		<p class="para9ge">
+		<b>Gutes Design ist umweltfreundlich.</b><br>
+		Oh ja ist es! Wenn wir etwas Langlebiges tun und den vorherigen Grundsätzen folgen, können wir meiner Meinung nach zu weniger Abfall und mehr Produktivität beitragen.</p>
+		</div>
+			
+		<div class="column2">
+			
+		<p class="introduction"><br><br><br><br></p>
+			
+		<h3>2</h3>
+		<p class="para2ge">
+		<b>Gutes Design macht ein Produkt nutzlich.</b><br>
+		Der Nutzen eines Produkts geht über seine funktionale Verwendung hinaus. Es muss sich auch wie etwas anfühlen, über das man nicht aufhören kann nachzudenken. Etwas, das Ihren Tag beeinflusst und Sie sich gut fühlen lässt. Denn manchmal reicht sogar ein Toaster aus, um Ihre Stimmung zu heben, wenn er richtig funktioniert und mehr als erwartet leistet.</p>
+			
+		<h3>6</h3>
+		<p class="para6ge">
+		<b>Gutes Design ist ehrlich.</b><br>
+		Ich habe das Gefühl, wir vergessen oft, wie gut ehrliches Design sein kann. Ich gut gestaltete und passende weiße Stuhl und Schreibtisch ist das perfekte Beispiel. Wenn es Fehler hätte, aber gut aussehen würde, hätte es seinen Zweck nicht erfüllt und nur die Produktivität des Benutzers beeinträchtigt. Eine ehrliche und wahrheitsgemäße Gestaltung kann dem Benutzer ein Lächeln ins Gesicht zaubern.</p>
+		
+		<h3>10</h3>
+		<p class="para10">
+		<b>Gutes Design ist so wenig Design wie möglich.</b><br>
+		Wir denken an Design, das bis ins kleinste Detail gründlich und so wenig wie möglich ist. Design ist immer beabsichtigt, alles, was keinen Zweck erfüllt, sollte beseitigt werden. Das Design folgt der Funktion, löschen, wenn dies nicht der Fall ist!</p>
+		</div>
+			
+		<div class="column3">
+		
+			<p class="introduction">Dieses Projekt befasste sich eingehender mit dem Verständnis der Prinzipien von Dieter Rams und dem praktischen und praktischen Erlernen dieser Prinzipien. Fragen Sie sich: "Ist unser Design gutes Design?"<br><br></p>
+			
+		<h3>3</h3>
+		<p class="para3">
+		<b>Gutes Design ist asthetisch.</b><br>
+		Ein Produkt muss auch ästhetisch ansprechend sein. Denn dies wird wahrscheinlich das tägliche Leben eines Verbrauchers beeinflussen. Etwas, das in einem Raum stattfinden würde und es sollte etwas zu sehen sein!</p>
+			
+		<h3>7</h3>
+		<p class="para7">
+		<b>Gutes Design ist langlebig.</b><br>
+		Gutes Design passt nie zum aktuellen Trend oder versucht, mit der Ära Schritt zu halten. Daher überschreitet es den Lauf der Zeit. Gutes Design kommt nie aus der Mode, weil es nie versucht, dabei zu sein.</p>
+		</div>
+			
+		<div class="column4">
+			
+			<p class="introduction"><span>Kshitij Gotiwale<br>Digital Media Design IV<br><br><br></span></p>
+			
+		<h3>4</h3>
+		<p class="para4">
+		<b>Gutes Design macht ein Produkt verstandlich.</b><br>
+		Ich glaube, dass das so wahr ist. Gutes Design macht das Produkt verständlich. Ich habe das Gefühl, wenn mein Opa etwas gebrauchen kann, ist es gutes Design. Ich möchte kein 30-seitiges Handbuch lesen, ich muss das Design gut genug sein, damit ich bei der Abholung des Produkts alles verstehe, was dazu gehört.</p>
+			
+		<h3>8</h3>
+		<p class="para8ge">
+		<b>Gutes Design ist bis ins letzte Detail gründlich.</b><br>
+		Bei gutem Design geht es darum, sorgfältig auf jede Linie, jeden Typ und jede Form zu achten. Das menschliche Auge kann die geringste Änderung der Ausrichtung bemerken, wenn es nicht richtig gemacht wird. Gutes Design ist bis ins kleinste Detail durchdacht, wenn ich es war, bis zu dem Punkt, an dem der Schatten den ganzen Tag über aussieht.</p>
+		</div>
+			
+		
+		
+		
+		
+		
+		
 		
 		
 		</div>
@@ -234,7 +438,6 @@
 	
 	
 	
-	</div>
 	
 	
 		
@@ -263,13 +466,18 @@
 	
 	<script>
 		function myFunction() {
-  		var x = document.getElementById("myDIV");
-  		if (x.style.display === "none") {
-    			x.style.display = "block";
+			var x = document.getElementById("english");
+			var y = document.getElementById("german");
+  			if (x.style.display == "none") {
+    			x.style.display = "flex";
+				y.style.display = "none";
+				
   			} else {
     			x.style.display = "none";
+				y.style.display = "flex";
   			}
 		}
+		
 	</script>
 </body>
 </html>
