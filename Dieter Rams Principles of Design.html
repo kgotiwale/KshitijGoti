@@ -518,7 +518,7 @@
 	<h2>Rams<br><span class="number">10</span><br><span class="text">principles<br>of design</span></h2>
 	<input type="button" class="germanButton" onClick="myFunction()" value="de">
 	<br>
-	<input type="button" class="englishButton" onClick="" value="en">
+	<input type="button" class="englishButton" onClick="myFunctionE()" value="en">
 	
 	<div class="main" id="english">
 		<div class="column1">
@@ -706,6 +706,19 @@
 	
 	<script>
 		function myFunction() {
+			var x = document.getElementById("english");
+			var y = document.getElementById("german");
+  			if (x.style.display == "none") {
+    			x.style.display = "flex";
+				y.style.display = "none";
+				
+  			} else {
+    			x.style.display = "none";
+				y.style.display = "flex";
+  			}
+		}
+		
+		function myFunctionE() {
 			var x = document.getElementById("english");
 			var y = document.getElementById("german");
   			if (x.style.display == "none") {
