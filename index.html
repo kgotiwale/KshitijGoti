@@ -2,48 +2,148 @@
 <html>
 <head>
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 		
-	stronger
-		{
-			font-family: "NeueHaasDisplay-Bold", sans-serif;
-			font-weight: bold;
+		.nav{
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Nanum Myeongjo', 'Times', serif;
+		}
+		
+		.nav h1{
+			text-align: left;
+			position: fixed;
+			z-index: 10;
+			margin-top: 10px;
+			margin-left: 10px;
+			width: 100%;
+			font-size: 25px;
+			line-height: 30px;
+			font-weight: 700;
+			color: black;
+		}
+		
+		.nav h1 span {
+			text-decoration: underline;
+			font-size: 25px;
+			line-height: 30px;
+			font-weight: 700;
+	}
+		
+		.nav h1 a {
+			text-decoration: none;
+			transition: all 0.2s ease-in-out;	
+			color: black;		
+	}
+		
+		.nav h1 a:hover {
+			text-decoration: none;
+			color: transparent;  
+	    	transition: all 0.2s ease-in-out;
+	}
+		
+		.list {
+			font-family: 'Nanum Myeongjo', 'Times', serif; 
+			font-size: 25px;
+			overflow-x: auto;
+			line-height: 30px;
+			padding-top: 100px;
+	}
 
-		}
-	
-	body
-		{
-			font-family: "NeueHaasDisplay-Light", sans-serif;
-			width: 90%;
-		}
+		.list table {
+			width: 100%;
+			padding: 0px;
+			border-collapse: collapse;
+			text-align: left;
+	}
+		.list th, td {
+			border-bottom: 1px solid black;
+			padding-left: 15px;
+	}
+		
+		tr {
+			background-color: white;
+			height: 75px;
+			transition: all 0.2s ease-in-out;
+	}
+
+		tr:not(:first-child):hover {
+			background-color: #f6ff00;
+			transition: all 0.2s ease-in-out;
+	}
+		
+		th {
+			background-color: white;
+	}
+
+		td {
+			vertical-align: top;
+	}
+		
+		td img {
+			height: 145px;
+			width: auto;
+			margin-top: -1px;
+			margin-bottom: -7px;
+	}
+
+		td a {
+			color: black;
+			text-decoration: none;
+	}
+		
+
+		
 	</style>
 <meta charset="UTF-8">
 <title>Index</title>
 </head>
 
 <body>
-	<stronger>Kshitij Gotiwale / DES350</stronger>
-	<br>
-	<a href="Calculator.html" target="_self">CSS Calculator</a>
-	<br>
-	<a href="Dieter Rams Moodboard-01.png" target="_self">Dieter Rams Moodboard</a>
-	<br>
-	<a href="Calculator_Finalsketch.png" target="_self">Final Calculator Mockup</a>
-	<br>
-	<a href="Calculator1.html" target="_self">Rams Calculator</a>
-	<br>
-	<a href="10 Principles of Design.html" target="_self">10 Principles of Design</a>
-	<br>
-	<a href="Dieter Rams Poster Moodboard-01.png" target="_self">Dieter Rams Poster Moodboard</a>
-	<br>
-	<a href="Dieter Rams(desktop).png" target="_self">Dieter Rams Poster(desktop)</a>
-	<br>
-	<a href="Dieter Rams(phone).png" target="_self">Dieter Rams Poster(phone)</a>
-	<br>
-	<a href="Dieter Rams Principles of Design.html" target="_self">Dieter Rams, Principles of Design</a>
-	<br>
-	<a href="Dieter Rams Principles of Design(variation).html" target="_self">Dieter Rams, Principles of Design (variation)</a>
-	<br>
-	<a href="Face1.png" target="_self">HTML, Self Portrait</a>
-	<br>
+	<div class="nav">
+	<h1>Kshitij Gotiwale<br><span>Coding</span>, <a href="index_design.html">Design</a>, <a href="etc.html">etc.</a></h1>
+	</div>
+	
+	<div class="list">
+		<table>
+			<th>Name</th>
+			<th>Kind</th>
+			<th>Client</th>
+			<th>Year</th>
+			<th>Preview</th>
+			<tr>
+		      <td><a href="calculator.html" target="_self">Simple Calculator</a></td>
+		      <td>HTML, CSS<br>(coding, design)</td>
+		      <td>University of Illinois at Chicago<br>DES 350</td>
+		      <td>2020</td>
+		      <td><a href="calculator.html"><img src="calculator.png" alt="calculator preview"></a></td>
+		   </tr>
+			<tr>
+		      <td><a href="Calculator1.html" target="_self">Rams Calculator</a></td>
+		      <td>HTML, CSS<br>(coding, design)</td>
+		      <td>University of Illinois at Chicago<br>DES 350</td>
+		      <td>2020</td>
+		      <td><a href="Calculator1.html"><img src="ramscalculator.png" alt="rams calculator preview"></a></td>
+		   </tr>
+			<tr>
+		      <td><a href="Dieter Rams Principles of Design.html" target="_self">Rams Principles of Design</a></td>
+		      <td>HTML, CSS, Javascript<br>(coding, design)</td>
+		      <td>University of Illinois at Chicago<br>DES 350</td>
+		      <td>2020</td>
+		      <td><a href="Dieter Rams Principles of Design.html"><img src="ramscalculator.png" alt="priciples of design preview"></a></td>
+		   </tr>
+			<tr>
+		      <td><a href="Dieter Rams Principles of Design(variation).html" target="_self">Rams Principles of Design (variation)</a></td>
+		      <td>HTML, CSS, Javascript<br>(coding, design)</td>
+		      <td>University of Illinois at Chicago<br>DES 350</td>
+		      <td>2020</td>
+		      <td><a href="Dieter Rams Principles of Design.html"><img src="ramscalculator.png" alt="priciples of design preview"></a></td>
+		   </tr>
+			
+			
+		</table>		
+	</div>
+	
 </body>
 </html>
