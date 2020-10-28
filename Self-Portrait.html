@@ -7,38 +7,419 @@
 	
 	
 	<style>
+		body{
+			margin-top: 20%;
+		}
+		
 		.circle {
 			position: absolute;
-			top: 280px;
+			top: 370px;
 			left: 300px;
 			width: 384px;
 			height: 384px;
 			background: #fccf8b;
 			border-radius: 50%;
-			z-index: 2;
+			z-index: 3;
     }
 		.rectangle{
 			position: absolute;
-			top: 250px;
+			top: 350px;
 			left: 300px;
 			width: 384px;
 			height: 210px;
 			background: #fccf8b;
 			border-top-left-radius: 43px;
 			border-top-right-radius: 43px;
-			z-index: 2;
+			z-index: 3;
 		}
 		
 		.hair1{
 			position: absolute;
+			top: 400px;
+			left: 280px;
 			width: 108px;
 			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair2{
+			position: absolute;
+			top: 320px;
+			left: 260px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair3{
+			position: absolute;
+			top: 250px;
+			left: 240px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair4{
+			position: absolute;
+			top: 180px;
+			left: 260px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair5{
+			position: absolute;
+			top: 120px;
+			left: 310px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair6{
+			position: absolute;
+			top: 80px;
+			left: 370px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair7{
+			position: absolute;
+			top: 75px;
+			left: 450px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair8{
+			position: absolute;
+			top: 90px;
+			left: 510px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair9{
+			position: absolute;
+			top: 130px;
+			left: 570px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair10{
+			position: absolute;
+			top: 190px;
+			left: 610px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair11{
+			position: absolute;
+			top: 260px;
+			left: 625px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair12{
+			position: absolute;
+			top: 340px;
+			left: 615px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair21{
+			position: absolute;
+			top: 420px;
+			left: 600px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hair13{
+			position: absolute;
+			top: 400px;
+			left: 600px;
+			width: 108px;
+			height: 108px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		
+		.hairsquare{
+			position: absolute;
+			top: 150px;
+			left: 340px;
+			width: 300px;
+			height: 210px;
+			background: #262626;
+			z-index: 2;
+			
+		}
+		
+		.hair13{
+			position: absolute;
+			top: 310px;
+			left: 340px;
+			width: 73px;
+			height: 73px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		
+		.hair14{
+			position: absolute;
+			top: 330px;
+			left: 400px;
+			width: 73px;
+			height: 73px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		
+		.hair15{
+			position: absolute;
+			top: 325px;
+			left: 460px;
+			width: 73px;
+			height: 73px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		
+		.hair16{
+			position: absolute;
+			top: 315px;
+			left: 500px;
+			width: 73px;
+			height: 73px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		
+		.hair17{
+			position: absolute;
+			top: 330px;
+			left: 540px;
+			width: 73px;
+			height: 73px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		
+		.hair18{
+			position: absolute;
+			top: 320px;
+			left: 560px;
+			width: 73px;
+			height: 73px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		
+		.hair19{
+			position: absolute;
+			top: 300px;
+			left: 600px;
+			width: 73px;
+			height: 73px;
+			background: #262626;
+			border-radius: 50%;
+			z-index: 3;
+		}
+		
+		.hair20{
+			position: absolute;
+			top: 290px;
+			left: 630px;
+			width: 73px;
+			height: 73px;
 			background: #262626;
 			border-radius: 50%;
 			z-index: 3;
 		}
 		
 		
+
+		
+		.ear1{
+			position: absolute;
+			top: 460px;
+			left: 260px;
+			width: 75px;
+			height: 75px;
+			background: #fccf8b;
+			border-radius: 50%;
+			z-index: 0;
+		}
+		
+		.ear1inside{
+			position: absolute;
+			top: 476px;
+			left: 284px;
+			width: 39px;
+			height: 39px;
+			background: #ffba5f;
+			border-radius: 50%;
+			z-index: 0;
+		}
+		
+		.ear2{
+			position: absolute;
+			top: 460px;
+			left: 650px;
+			width: 75px;
+			height: 75px;
+			background: #fccf8b;
+			border-radius: 50%;
+			z-index: 0;
+		}
+		
+		.leftglassframe{
+			position: absolute;
+			top: 450px;
+			left: 330px;
+			width: 141px;
+			height: 93px;
+			background: #000;
+			border-radius: 6px;
+			z-index: 4;
+		}
+
+		.leftglass{
+			position: absolute;
+			top: 465px;
+			left: 350px;
+			width: 100px;
+			height: 63px;
+			background: #ffe4b8;
+			border-radius: 7px;
+			z-index: 4;
+		}
+		
+		.lefteye{
+			position: absolute;
+			top: 485px;
+			left: 385px;
+			width: 26px;
+			height: 26px;
+			background: #141414;
+			border-radius: 50%;
+			z-index: 4;
+		}
+		
+		.lefteyeref{
+			position: absolute;
+			top: 490px;
+			left: 386px;
+			width: 6px;
+			height: 6px;
+			background: #fff;
+			border-radius: 50%;
+			z-index: 4;
+		}
+		
+		.bridge{
+			position: absolute;
+			top: 470px;
+			left: 470px;
+			width: 62px;
+			height: 16px;
+			background: #000;
+			z-index: 4;
+		}
+		
+		.rightglassframe{
+			position: absolute;
+			top: 450px;
+			left: 520px;
+			width: 141px;
+			height: 93px;
+			background: #000;
+			border-radius: 6px;
+			z-index: 4;
+		}
+		
+		.rightglass{
+			position: absolute;
+			top: 465px;
+			left: 541px;
+			width: 100px;
+			height: 63px;
+			background: #ffe4b8;
+			border-radius: 7px;
+			z-index: 4;
+		}
+		
+		.righteye{
+			position: absolute;
+			top: 485px;
+			left: 579px;
+			width: 26px;
+			height: 26px;
+			background: #141414;
+			border-radius: 50%;
+			z-index: 4;
+		}
+		
+		.righteyeref{
+			position: absolute;
+			top: 490px;
+			left: 580px;
+			width: 6px;
+			height: 6px;
+			background: #fff;
+			border-radius: 50%;
+			z-index: 4;
+		}
+	
 		
 	</style>
 	
@@ -53,6 +434,42 @@
 	</div>
 	<div class="hair">
 		<div class="hair1"></div>
+		<div class="hair2"></div>
+		<div class="hair3"></div>
+		<div class="hair4"></div>
+		<div class="hair5"></div>
+		<div class="hair6"></div>
+		<div class="hair7"></div>
+		<div class="hair8"></div>
+		<div class="hair9"></div>
+		<div class="hair10"></div>
+		<div class="hair11"></div>
+		<div class="hair12"></div>
+		<div class="hair21"></div>
+		<div class="hairsquare"></div>
+		<div class="hair13"></div>
+		<div class="hair14"></div>
+		<div class="hair15"></div>
+		<div class="hair16"></div>
+		<div class="hair17"></div>
+		<div class="hair18"></div>
+		<div class="hair19"></div>
+		<div class="hair20"></div>
+	</div>
+	<div class="ear1"></div>
+	<div class="ear1inside"></div>
+	<div class="ear2"></div>
+	<div class="ear2inside"></div>
+	<div class="glasses and eyes">
+		<div class="leftglassframe"></div>
+		<div class="leftglass"></div>
+		<div class="lefteye"></div>
+		<div class="lefteyeref"></div>
+		<div class="bridge"></div>
+		<div class="rightglassframe"></div>
+		<div class="rightglass"></div>
+		<div class="righteye"></div>
+		<div class="righteyeref"></div>
 	</div>
 	
 	
