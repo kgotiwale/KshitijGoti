@@ -20,7 +20,20 @@
 			background: #fccf8b;
 			border-radius: 50%;
 			z-index: 3;
-    }
+    	}
+		
+		
+		.circlebg {
+			position: absolute;
+			top: 380px;
+			left: 300px;
+			width: 384px;
+			height: 384px;
+			background: #ffba5f;
+			border-radius: 50%;
+			z-index: 0;
+    	}
+		
 		.rectangle{
 			position: absolute;
 			top: 350px;
@@ -353,6 +366,28 @@
 			background: #141414;
 			border-radius: 50%;
 			z-index: 4;
+			
+			animation-name: leftmove, wink;
+			animation-duration: 4s, 5s;
+			animation-delay: 0s, 8s;
+			animation-iteration-count: 2, 2;
+			
+		}
+		
+		@-webkit-keyframes wink{
+			0%, 100% {
+        transform: scale(1, .05);
+    		}
+    	5%, 95% {
+        transform: scale(1, 1);
+   			}
+		}
+		
+		@-webkit-keyframes leftmove {
+			0% {left: 385px}
+			25% {left: 410px}
+			50% {left: 365px}
+			100% {left: 385px}
 		}
 		
 		.lefteyeref{
@@ -364,6 +399,18 @@
 			background: #fff;
 			border-radius: 50%;
 			z-index: 4;
+			
+			animation-name: leftmoveref;
+			animation-duration: 4s;
+			animation-delay: 0s;
+			animation-iteration-count: 2;
+		}
+		
+		@-webkit-keyframes leftmoveref {
+			0% {left: 386px}
+			25% {left: 411px}
+			50% {left: 366px}
+			100% {left: 386px}
 		}
 		
 		.bridge{
@@ -407,6 +454,18 @@
 			background: #141414;
 			border-radius: 50%;
 			z-index: 4;
+			
+			animation-name: rightmove;
+			animation-duration: 4s;
+			animation-delay: 0s;
+			animation-iteration-count: 2;
+		}
+		
+		@-webkit-keyframes rightmove {
+			0% {left: 579px}
+			25% {left: 594px}
+			50% {left: 560px}
+			100% {left: 579px}
 		}
 		
 		.righteyeref{
@@ -418,6 +477,18 @@
 			background: #fff;
 			border-radius: 50%;
 			z-index: 4;
+			
+			animation-name: rightmoveref;
+			animation-duration: 4s;
+			animation-delay: 0s;
+			animation-iteration-count: 2;
+		}
+		
+		@-webkit-keyframes rightmoveref {
+			0% {left: 580px}
+			25% {left: 595px}
+			50% {left: 561px}
+			100% {left: 580px}
 		}
 		
 		.lefteyebrowcircle1{
@@ -429,6 +500,16 @@
 			background: #000;
 			border-radius: 50%;
 			z-index: 4;
+			animation-name: leftpump;
+			animation-duration: 2s;
+			animation-delay: 8s;
+			animation-iteration-count: 2;			
+		}
+		
+		@-webkit-keyframes leftpump {
+			0% {top:430px}
+			50% {top: 410px}
+			100% {top: 430px}
 		}
 		
 		.lefteyebrowrectangle{
@@ -439,6 +520,11 @@
 			height: 14px;
 			background: #000;
 			z-index: 4;
+			
+			animation-name: leftpump;
+			animation-duration: 2s;
+			animation-delay: 8s;
+			animation-iteration-count: 2;
 		}
 		
 		.lefteyebrowcircle2{
@@ -450,6 +536,11 @@
 			background: #000;
 			border-radius: 50%;
 			z-index: 4;
+			
+			animation-name: leftpump;
+			animation-duration: 2s;
+			animation-delay: 8s;
+			animation-iteration-count: 2;
 		}
 		
 		.righteyebrowcircle1{
@@ -486,7 +577,7 @@
 		
 		.nose{
 			position: absolute;
-			top: 580px;
+			top: 570px;
 			left: 471px;
 			width: 48px;
 			height: 48px;
@@ -495,6 +586,77 @@
 			z-index: 4;
 		}
 		
+		.mouthbg{
+			position: absolute;
+			top: 650px;
+			left: 420px;
+			height: 74px;
+  			width: 148px;
+			background: #7f1204;
+		  	border-bottom-left-radius: 148px;
+  			border-bottom-right-radius: 148px;
+			z-index: 4;
+    	}
+		
+		.upperteeth{
+			position: absolute;
+			top: 650px;
+			left: 433px;
+			width: 123px;
+			height: 17px;
+			background: #fff;
+			z-index: 4;
+		}
+		
+		.upperteethshadow{
+			position: absolute;
+			top: 650px;
+			left: 433px;
+			width: 123px;
+			height: 6px;
+			background: #ddd;
+			z-index: 4;
+		}
+		
+		.lowerteeth{
+			position: absolute;
+			top: 576.5px;
+			left: 420px;
+			width: 148px;
+			height: 148px;
+			overflow: hidden;
+			border-radius: 50%;
+			background: transparent;
+			z-index: 5;
+			transform: rotate(270deg);
+			
+		}
+		
+		.segment{
+			float: left;
+    		width: 13%;
+    		height: 100%;
+			background: #fff;
+			z-index: 6;
+		}
+		
+		.tongue{
+			position: absolute;
+			top: 695px;
+			left: 465px;
+			width: 62px;
+			height: 14px;
+			background: #ab1b00;
+			border-radius: 6px;
+			z-index: 4;
+		}
+	
+		
+		
+		
+		
+		
+		
 	</style>
 	
 	
@@ -502,10 +664,9 @@
 </head>
 
 <body>
-	<div class="circle">
-	</div>
-	<div class="rectangle">
-	</div>
+	<div class="circle"></div>
+	<div class="circlebg"></div>
+	<div class="rectangle"></div>
 	<div class="hair">
 		<div class="hair1"></div>
 		<div class="hair2"></div>
@@ -540,7 +701,7 @@
 		<div class="lefteyebrowcircle2"></div>
 		<div class="leftglassframe"></div>
 		<div class="leftglass"></div>
-		<div class="lefteye"></div>
+		<div class="lefteye" id="winkleft"></div>
 		<div class="lefteyeref"></div>
 		<div class="bridge"></div>
 		<div class="righteyebrow"></div>
@@ -557,7 +718,9 @@
 		<div class="mouthbg"></div>
 		<div class="upperteeth"></div>
 		<div class="upperteethshadow"></div>
-		<div class="lowerteeth"></div>
+		<div class="lowerteeth">
+			<div class="segment"></div>
+		</div>
 		<div class="tongue"></div>
 		
 	</div>
