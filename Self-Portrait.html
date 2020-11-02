@@ -501,7 +501,7 @@
 			border-radius: 50%;
 			z-index: 4;
 			animation-name: leftpump;
-			animation-duration: 2s;
+			animation-duration: 1s;
 			animation-delay: 8s;
 			animation-iteration-count: 2;			
 		}
@@ -522,9 +522,15 @@
 			z-index: 4;
 			
 			animation-name: leftpump;
-			animation-duration: 2s;
+			animation-duration: 1s;
 			animation-delay: 8s;
 			animation-iteration-count: 2;
+		}
+		
+		@-webkit-keyframes leftpump {
+			0% {top:430px}
+			50% {top: 410px}
+			100% {top: 430px}
 		}
 		
 		.lefteyebrowcircle2{
@@ -538,9 +544,15 @@
 			z-index: 4;
 			
 			animation-name: leftpump;
-			animation-duration: 2s;
+			animation-duration: 1s;
 			animation-delay: 8s;
 			animation-iteration-count: 2;
+		}
+		
+		@-webkit-keyframes leftpump {
+			0% {top:430px}
+			50% {top: 410px}
+			100% {top: 430px}
 		}
 		
 		.righteyebrowcircle1{
@@ -651,6 +663,37 @@
 			z-index: 4;
 		}
 	
+		.text{
+			position: relative;
+			font-family: 'Gotham', 'Helvetica Neue', 'Helvetica', sans-serif;
+			font-weight: 800;
+			font-size: 150px;
+			float: left;
+			top: 150px;
+			left: 900px;
+			white-space: nowrap;
+   	 		overflow: hidden;
+    		transform: translateY(-50%);
+			width: 20em;
+    		margin: 0 auto;
+    		border-right: 2px solid rgba(0,0,0,0.75);
+			
+		}
+		
+		.anim-typewriter{
+  			animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+		}
+		
+		@keyframes typewriter{
+  			from{width: 0;}
+  			to{width: 24em;}
+		}
+		
+		@keyframes blinkTextCursor{
+		  	from{border-right-color: rgba(0,0,0,0.75);}
+		  	to{border-right-color: transparent;}
+		}
 		
 		
 		
@@ -721,8 +764,10 @@
 		<div class="lowerteeth">
 			<div class="segment"></div>
 		</div>
-		<div class="tongue"></div>
-		
+		<div class="tongue"></div>	
+	</div>
+	<div class="text anim-typewriter">
+		Hey,<br>this is me.
 	</div>
 	
 	
